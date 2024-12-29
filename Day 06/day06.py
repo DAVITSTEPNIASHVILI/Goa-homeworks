@@ -1,0 +1,8 @@
+print(3+5)
+print(9+0)
+print(10-5)
+print(39-9)
+print(9*3)
+print(9*4)
+print(35/5)
+print(40/8)

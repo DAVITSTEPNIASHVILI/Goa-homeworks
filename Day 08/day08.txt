@@ -1,0 +1,4 @@
+debugging არის შეცდომების გამოსწორება
+
+case-sensitive არის დამოკიდებული lowercase დავწერთ თუ uppercase
+case-insensitive არ არის დამოკიდებული lowercase დავწერთ თუ uppercase

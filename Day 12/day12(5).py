@@ -1,0 +1,6 @@
+ht=int(input("enter your number: "))
+ij=float(input("enter your age: "))
+print(ht+ij)
+print(ht-ij)
+print(ht/ij)
+print(ht*ij)

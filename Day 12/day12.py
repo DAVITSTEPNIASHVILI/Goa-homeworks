@@ -1,0 +1,10 @@
+num1=7
+name="david"
+surname="stepniashvili"
+num2=7.9
+num3=8.0
+print(type(num1))
+print(type(name))
+print(type(surname))
+print(type(num2))
+print(type(num3))
