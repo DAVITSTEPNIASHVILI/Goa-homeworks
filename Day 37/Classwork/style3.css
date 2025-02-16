@@ -1,0 +1,9 @@
+#id1 {
+    text-decoration: underline;
+}
+#id2 {
+    text-decoration: line-through;
+}
+#id1 {
+    text-decoration: overline;
+}
