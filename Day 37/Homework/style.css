@@ -1,0 +1,33 @@
+p {
+    text-decoration: underline;
+}
+h1 {
+    text-decoration: overline;
+}
+span {
+    text-decoration: line-through;
+}
+h2 {
+    text-decoration: underline overline;
+}
+a {
+    text-decoration: underline dashed;
+}
+p.warning {
+    text-decoration: wavy;
+}
+a {
+    text-transform: uppercase;
+}
+h3 {
+    text-shadow: 2px 3px black 5px;
+}
+h4 {
+    text-shadow: 2px 3px 0px black;
+}
+p {
+    text-shadow: 2px 3px black 9px;
+}
+p {
+    text-shadow: 2px 3px 4px rgb(89,123,9);
+}
