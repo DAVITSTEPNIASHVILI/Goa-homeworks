@@ -24,13 +24,16 @@ def greet(name):
 
 greet(input("Enter name here: "))
 
-def outer_function():
-    print("This is the outer function.")
-    def inner_function():
-        print("This is the inner function.")
+def greet(name):
+    def better_greet(user_name,user_surname):
+        return "hello",user_name,user_surname
+    
+    result9 =  better_greet(name,"orientadze")
+    return result9
 
-    inner_function()
-outer_function()
+print(greet("David"))
+
+
 
 def check_even_odd(numbers):
     numbers = [1, 2, 3, 4, 5, 6]
