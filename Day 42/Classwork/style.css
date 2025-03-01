@@ -1,0 +1,14 @@
+#link {
+    color: red;
+    text-decoration: line-through;
+}
+#link:hover {
+    color: brown;
+    text-decoration: overline;
+}
+#link:visited {
+    background-color: black;
+    font-style: italic;
+    font-family: "roboto";
+    font-weight: bold;
+}
