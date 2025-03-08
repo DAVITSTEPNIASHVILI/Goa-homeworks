@@ -1,0 +1,12 @@
+body {
+    background-color: yellowgreen;
+}
+#t4 {
+    border-collapse: collapse;
+}
+#t4 tr:nth-child(1){
+    background-color: yellow;
+}
+#t4 tr {
+    background-color: white;
+}

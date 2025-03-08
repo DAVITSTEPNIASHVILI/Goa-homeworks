@@ -1,0 +1,62 @@
+body {
+    background-color: black;
+}
+/* table 1 */
+#t1 {
+    border-collapse: collapse;
+}
+#t1 tr:nth-child(1) {
+    color: white;
+    background-color: rgb(200, 24, 24);
+}
+#t1 tr:nth-child(2) {
+    background-color: white;
+}
+#t1 tr:nth-child(4) {
+    background-color: white;
+}
+#t1 tr:nth-child(3) {
+    background-color: gray;
+}
+#t1 tr:nth-child(5) {
+    background-color: gray;
+}
+
+/* table 2 */
+#t2 {
+    border-collapse: collapse;
+}
+#t2 tr:nth-child(1) {
+    color: white;
+    background-color: rgb(50, 200, 24);
+}
+#t2 tr:nth-child(2) {
+    background-color: white;
+}
+#t2 tr:nth-child(4) {
+    background-color: white;
+}
+#t2 tr:nth-child(3) {
+    background-color: gray;
+}
+#t2:nth-child(5) {
+    background-color: gray;
+}
+
+/* table 3 */
+#t3 {
+    border-collapse: collapse;
+}
+#t3 tr:nth-child(1) {
+    color: white;
+    background-color: rgb(24, 53, 200);
+}
+#t3 tr:nth-child(2) {
+    background-color: white;
+}
+#t3 tr:nth-child(4) {
+    background-color: white;
+}
+#t3 tr:nth-child(3) {
+    background-color: gray;
+}

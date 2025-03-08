@@ -1,0 +1,26 @@
+#table1, #table1 hr, #table1 td {
+    border: 1xp solid greenyellow;
+    text-align: center;
+    border-collapse: collapse;
+}
+#table1:nth-child(even) {
+    background-color: white;
+}
+#table1:nth-child(1) {
+    background-color: darkgreen;
+    color: white;
+}
+#table1 tr:nth-child(3), #table1 tr:nth-child(5) {
+    background-color: rgb(161, 161, 161);
+}
+
+#table2 tr:nth-child(1) {
+    background-color: green;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#ul1 {
+    list-style-type:circle;
+    list-style-position: inside;
+}
