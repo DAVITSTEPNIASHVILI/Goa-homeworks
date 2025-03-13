@@ -1,0 +1,32 @@
+/*  Add Padding to a Div – Apply padding inside a <div> to create space between the content and its border. */
+div {
+    padding: 1px;
+}
+
+/* Set Different Padding Values – Apply different padding values for the top, right, bottom, and left sides of an element. */
+p {
+    padding: 1px 2px 3px 4px;
+}
+
+/* Round the Corners of a Box – Use border-radius to create rounded corners on a <div>. */
+div {
+    border-radius: 50%;
+}
+
+/* Add Margins Around a Paragraph – Apply a margin to a <p> element to create space between it and surrounding elements. */
+p {
+    margin: 1px;
+}
+
+/* Create a Button with Padding and Border – Style a button with padding inside and a border around it. */
+button {
+    padding: 5px;
+    border: none;
+}
+
+/* Adjust Margin Between List Items – Add margin to <li> elements to space out items in an unordered list. */
+ul li {
+    margin: 1px;
+}
+
+/* Use Negative Margins – Experiment with negative margins to move an element closer to another or overlap elements. */
