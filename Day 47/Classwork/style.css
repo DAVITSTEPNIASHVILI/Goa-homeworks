@@ -1,0 +1,22 @@
+#div1 {
+    color: green;
+    padding: 1px 2px 3px 4px;
+    margin: 5px;
+    border: 5px solid red;
+}
+
+#div2 {
+    border: 3px solid blue;
+    width: 200px;
+}
+
+.div {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+img {
+    border-left: 1px solid blue;
+    border-bottom: 2px dashed red;
+}

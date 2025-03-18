@@ -1,10 +1,10 @@
 # Tuple Indexing & Slicing: Create a tuple with at least 5 elements and extract the second, last, and a slice of the middle three elements.
 tuple1 = (1,True,98.0,False,"code")
-tuple2,tuple3 = tuple1[1],tuple1[-1]
+tuple2,tuple3,tuple4 = tuple1[1],tuple1[-1],tuple1[1:4]
 
 # Tuple Immutability: Try to modify an element in a tuple and observe what happens.
 my_tuple = (10, 20, 30)
-
+my_tuple[0] = 40
 
 # Tuple Packing & Unpacking: Create a tuple with multiple values, unpack them into separate variables, and print each variable.
 my_tuple2 = (10, 20, 30, 40, 50)
@@ -26,6 +26,6 @@ set1.remove(5)
 print(set1)
 
 # Removing Duplicates: Convert a list with duplicate elements into a set to remove duplicates and then convert it back to a list.
-set2 = {10,11,15,13,16,15,16,17}
-list(set(set2))
+set2 = [10,11,15,13,16,15,16,17]
+set2 = list(set(set2))
 print(set2)
