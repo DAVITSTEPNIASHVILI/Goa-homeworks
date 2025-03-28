@@ -1,0 +1,39 @@
+/* Create a flex container with three items arranged in a row. */
+#div {
+    display: flex;
+}
+/* Align all flex items to the center of the container. */
+#div {
+    align-items: center;
+}
+/* Distribute items evenly across the container with space between them. */
+#div {
+    justify-content: space-between;
+}
+/* Make one item grow twice as much as the others. */
+
+/* Reverse the order of the flex items. */
+#div {
+    flex-direction: row-reverse;
+}
+/* Align one specific item to the bottom while keeping others at the top. */
+#yellow {
+    align-items: flex-start;
+}
+/* Wrap items to the next line when the container is too small. */
+#div {
+    flex-wrap: wrap;
+}
+/* Center all items both horizontally and vertically. */
+#div {
+    justify-content: center;
+    align-items: center;
+}
+/* Set all items to have equal width regardless of content size. */
+#div {
+    width: 200px;
+}
+/* Change the direction of items to a vertical column. */
+#div {
+    flex-direction: column;
+}
