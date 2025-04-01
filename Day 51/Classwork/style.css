@@ -1,0 +1,41 @@
+body {
+    height: 2000px;
+    width: 2000px;
+}
+#child1 {
+    
+    background-color: red;
+    left: 0px;
+    top: 0px;
+}
+#child2 {
+    background-color: green;
+    right: 0px;
+    top: 0px;
+}
+#child3 {
+    background-color: blue;
+    left: 0px;
+    bottom: 0px;
+}
+#child4 {
+    background-color: purple;
+    right: 0px;
+    bottom: 0px;
+}
+#child5 {
+    background-color: gray;
+    right: 1000px;
+    top: 1000px;
+    left: 1000px;
+    bottom: 1000px;
+}
+
+
+
+#main-div {
+    width: 1000px;
+    height: 750px;
+    background-image: url("phyton.png");
+    background-size: cover;
+}

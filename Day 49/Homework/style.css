@@ -11,7 +11,12 @@
     justify-content: space-between;
 }
 /* Make one item grow twice as much as the others. */
-
+#div1 {
+    flex-grow: 1;
+}
+#div2 {
+    flex-grow: 2;
+}
 /* Reverse the order of the flex items. */
 #div {
     flex-direction: row-reverse;
