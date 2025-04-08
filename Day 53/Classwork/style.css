@@ -1,0 +1,11 @@
+#div1 {
+    width: 300px;
+    height: 150px;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    background-color: green;
+    border: 2px solid black;
+}
+#div1:hover {
+    transform: rotate(40deg) scale(2) translateY(200px);
+}

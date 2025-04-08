@@ -1,0 +1,252 @@
+body {
+    background-color: gray;
+}
+
+#div1 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    background-color: white;
+    border-radius: 50px;
+}
+#child1 {
+    position: relative;
+    top: 120px;
+    left: 170px;
+    background-color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+} 
+
+#div2 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50px;
+    left: 400px;
+    background-color: white;
+    border-radius: 50px;
+}
+#child2 {
+    position: relative;
+    top: 120px;
+    left: 530px;
+    background-color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+} 
+#child3 {
+    position: relative;
+    top: -40px;
+    left: 410px;
+    background-color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+} 
+
+#div3 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50px;
+    left: 700px;
+    background-color: white;
+    border-radius: 50px;
+}
+#child4 {
+    position: relative;
+    top: 30px;
+    left: 830px;
+    background-color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+} 
+#child5 {
+    position: relative;
+    top: -140px;
+    left: 700px;
+    background-color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+} 
+#child6 {
+    position: relative;
+    top: -130px;
+    left: 765px;
+    background-color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+#div4 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    background-color: white;
+    border-radius: 50px;
+}
+#child7 {
+    position: relative;
+    top: 10px;
+    left: 110px;
+    background-color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+} 
+#child8 {
+    position: relative;
+    top: 30px;
+    left: 110px;
+    background-color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+} 
+#child9 {
+    position: relative;
+    top: 40px;
+    left: 110px;
+    background-color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+#child10 {
+    position: relative;
+    top: -140px;
+    left: 230px;
+    background-color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+} 
+#child11 {
+    position: relative;
+    top: -120px;
+    left: 230px;
+    background-color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+} 
+#child12 {
+    position: relative;
+    top: -110px;
+    left: 225px;
+    background-color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+#div5 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 300px;
+    left: 400px;
+    background-color: white;
+    border-radius: 50px;
+}
+#child13 {
+    position: relative;
+    top: -290px;
+    left: 520px;
+    background-color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+} 
+#child14 {
+    position: relative;
+    top: -230px;
+    left: 520px;
+    background-color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+} 
+#child15 {
+    position: relative;
+    top: -280px;
+    left: 410px;
+    background-color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+#child16 {
+    position: relative;
+    top: -440px;
+    left: 410px;
+    background-color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+} 
+#child17 {
+    position: relative;
+    top: -430px;
+    left: 465px;
+    background-color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+} 
+
+#div6 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 300px;
+    left: 700px;
+    background-color: white;
+    border-radius: 50px;
+}
+#child18 {
+    position: relative;
+    top: -545px;
+    left: 710px;
+    background-color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+} 
+#child19 {
+    position: relative;
+    top: -480px;
+    left: 710px;
+    background-color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+} 
+#child20 {
+    position: relative;
+    top: -528px;
+    left: 830px;
+    background-color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+#child21 {
+    position: relative;
+    top: -695px;
+    left: 830px;
+    background-color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
