@@ -1,0 +1,28 @@
+/* Scale an image up when hovered. */
+img:hover {
+    transform: scale(2);
+}
+/* Rotate a button 45 degrees on click. */
+button:active {
+    transform: rotate(45deg);
+}
+/* Translate a div 50px to the right on hover. */
+div:hover {
+    transform: translateX(50px);
+}
+/* Continuously rotate an icon using animation. */
+/* ? */
+/* Scale down a card slightly on hover for a "press" effect. */
+div:hover {
+    transform: scale(0.5);
+}
+/* Translate a modal from bottom to center on open. */
+/* ? */
+/* Rotate a loading spinner indefinitely. */
+/* ? */
+/* Translate a tooltip slightly upward when visible. */
+/* ? */
+/* Scale a background image slightly for a zoom effect. */
+/* ? */
+/* Rotate a text element 180 degrees on toggle. */
+/* ? */
