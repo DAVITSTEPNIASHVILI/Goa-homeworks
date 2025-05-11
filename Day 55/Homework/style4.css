@@ -1,0 +1,58 @@
+/* 5) Create a simple animation using @keyframes that moves a box from left to right. */
+#box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: box;
+    animation-duration: 10s;
+}
+@keyframes box {
+    from {
+        transform: translateX(100px);
+    }
+    to {
+        transform: translateX(100px);
+    }
+}
+/* 6) Define an animation using @keyframes that changes the background color from blue to red over 5 seconds. */
+#box1 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation-name: box1;
+    animation-duration: 5s;
+}
+@keyframes box1 {
+    from {
+        background-color: blue;
+    }
+    to {
+        background-color: red;
+    }
+}
+/* 7) Create a CSS animation that rotates an element 360 degrees. */
+#element {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    transform: rotate(360deg);
+}
+/* 8) Design a pulse effect using keyframes where an element scales up and down. */
+#pulse {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: pulse;
+    animation-duration: 10s;
+}
+@keyframes pulse {
+    from {
+        transform: scale(1),translateX(50px);
+    }
+    50% {
+        transform: scale(3),translateX(50px);
+    }
+    to {
+        transform: scale(1),translateX(50px);
+    }
+}

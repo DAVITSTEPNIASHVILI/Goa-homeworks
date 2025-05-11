@@ -1,0 +1,198 @@
+/* Create a simple animation using @keyframes that moves a box from left to right. */
+#div1 {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    animation: box1 3s;
+}
+@keyframes box1 {
+    from {
+        background-color: blue;
+    }
+    to {
+        background-color: yellow;
+        transform: translateX(50px);
+    }
+}
+
+/* /* Define an animation using @keyframes that changes the background color from blue to red over 5 seconds. */
+#div2 {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    animation: box2 5s;
+}
+@keyframes box2 {
+    from {
+        background-color: blue;
+    }
+    to {
+        background-color: red;
+    }
+}
+/* Create a CSS animation that rotates an element 360 degrees. */
+#div3 {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    animation: box3 3s;
+}
+@keyframes box3 {
+    from {
+        background-color: blue;
+    }
+    to {
+        background-color: yellow;
+        transform: rotate(360deg);
+    }
+}
+/* Design a pulse effect using keyframes where an element scales up and down. */ 
+#div4 {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    animation: box4 3s;
+}
+@keyframes box4 {
+    from {
+        background-color: blue;
+    }
+    50% {
+        background-color: yellow;
+        transform: scale(3);
+        top: 100px;
+        right: 40%;
+    }
+    to {
+        background-color: blue;
+        transform: translateX(50px);
+    }
+}
+/* /* Animate a bouncing ball that repeats exactly 3 times. */
+#div5 {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    animation: box5 3s 3;
+}
+@keyframes box5 {
+    from {
+        background-color: blue;
+    }
+    50% {
+        background-color: yellow;
+        transform: scale(3);
+        top: 100px;
+        right: 40%;
+    }
+    to {
+        background-color: blue;
+        transform: translateX(50px);
+    }
+}
+/* Set up an infinite animation of a loading spinner. */
+#div6 {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50% 25% 50% 25%;
+    animation: box6 10s infinite;
+}
+@keyframes box6 {
+    from {
+        background-color: blue;
+    }
+    to {
+        background-color: blue;
+        transform: rotate(180deg);
+    }
+}
+/* Create an animation that runs only once and then stops. */
+#div7 {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    animation: box7 3s;
+}
+@keyframes box7 {
+    from {
+        background-color: blue;
+    }
+    to {
+        background-color: yellow;
+        transform: translateX(50px);
+    }
+}
+/* Use a class toggle to switch between an animation that loops and one that doesn't. */
+.div {
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    animation: boxs 3s;
+}
+#div7 {
+    animation-iteration-count: 1;
+}
+@keyframes boxs {
+    from {
+        background-color: blue;
+    }
+    to {
+        background-color: yellow;
+        transform: translateX(50px);
+    }
+}
+
+/* Set an animation to start 2 seconds after the page loads. */
+#divs {
+    animation-delay: 2s;
+}
+/* Create a sequence of three elements animating one after another using different animation-delay values. */
+.divs {
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    animation: boxs 3s 1s;
+}
+#delay {
+    animation-delay: 3s;
+}
+/* Make a fading effect that lasts for exactly 10 seconds. */
+#duration {
+    animation-duration: 10s;
+}

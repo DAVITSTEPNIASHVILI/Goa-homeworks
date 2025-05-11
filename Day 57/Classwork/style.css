@@ -1,0 +1,19 @@
+.div {
+    background-color: blue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: divs 5s ease-in 2s infinite;
+}
+@keyframes divs {
+    0% {
+        background-color: red;
+    }
+    50% {
+        background-color: blue;
+    }
+    100% {
+        background-color: yellow;
+    }
+}

@@ -1,0 +1,39 @@
+#circle {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    animation-name: div;
+    animation-duration: 10s;
+}
+@keyframes div {
+    from {
+    left: 200px;
+    transform: scale(1);
+    }
+    25% {
+    left: 500px;
+    bottom: 500px;
+    transform: scale(2);
+    }
+    50% {
+    left: 1000px;
+    bottom: 300px;
+    transform: scale(3);
+    }
+    75% {
+    left: 1500px;
+    right: 400px;
+    bottom: 550px;
+    transform: scale(2);
+    }
+    to {
+    left: 1700px;
+    right: 400px;
+    bottom: 100px;
+    transform: scale(2);
+    }
+}

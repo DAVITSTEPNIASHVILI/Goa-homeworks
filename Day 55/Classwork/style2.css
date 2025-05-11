@@ -1,0 +1,32 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#div2 {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+#div2:hover {
+    animation-name: div2;
+}
+@keyframes div2 {
+    from {
+        transform: scale(3) translateX(50px);
+    }
+    25% {
+        transform: scale(3) translateX(50px);
+    }
+    50% {
+        transform: scale(3) translateX(50px);
+    }
+    75% {
+        transform: scale(3) translateX(50px);
+    }
+    to {
+        transform: scale(3) translateX(50px);
+    }
+}
