@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, voluptatibus.</p>
+
+    <form onsubmit="showMessage(event)">
+        <input type="text" id="textInput" placeholder="Type something">
+        <button type="submit">Show Alert</button>
+    </form>
+
+    <form onsubmit="color()">
+        <input type="color" id="color" placeholder="Type color">
+        <button type="submit">Show Alert</button>
+    </form>
+
+    <form>
+        <input type="text" placeholder="First name" id="n1">
+        <input type="text" placeholder="Last name" id="n2">
+        <button type="submit">submit</button>
+    </form>
+    <h1 id="fullName"></h1>
+    <script src="main.js"></script>
+</body>
+</html>

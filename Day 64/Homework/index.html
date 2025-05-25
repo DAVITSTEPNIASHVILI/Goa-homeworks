@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Homework</title>
+</head>
+<body>
+
+    <!-- Task 1 -->
+    <h2>1. Log Variables</h2>
+    <script>
+        let name = "John Doe";
+        let age = 25;
+        let city = "New York";
+        console.log("Name:", name);
+        console.log("Age:", age);
+        console.log("City:", city);
+    </script>
+
+    <!-- Task 2 -->
+    <h2>2. Reassign Variable</h2>
+    <script>
+        let score = 10;
+        console.log("Initial score:", score);
+        score = 15;
+        console.log("Updated score:", score);
+    </script>
+
+    <!-- Task 3 -->
+    <h2>3. Display Message in Paragraph</h2>
+    <p id="output"></p>
+    <script>
+        let message = "Welcome!";
+        document.getElementById("output").textContent = message;
+    </script>
+
+    <!-- Task 4 -->
+    <h2>4. Change Text in Div</h2>
+    <div id="greeting">Hello!</div>
+    <button onclick="document.getElementById('greeting').textContent = 'Hi there!'">Change Greeting</button>
+
+    <!-- Task 5 -->
+    <h2>5. Change Color of Text</h2>
+    <h1 id="title">Hello World</h1>
+    <button onclick="document.getElementById('title').style.color = 'red'">Change Color</button>
+
+    <!-- Task 6 -->
+    <h2>6. Counter</h2>
+    <p>Count: <span id="counter">0</span></p>
+    <button onclick="incrementCounter()">Increase</button>
+    <script>
+        let count = 0;
+        function incrementCounter() {
+        count++;
+        document.getElementById("counter").textContent = count;
+    }
+    </script>
+
+    <!-- Task 7 -->
+    <h2>7. Status Change</h2>
+    <p id="status">Offline</p>
+    <button onclick="goOnline()">Go Online</button>
+    <script>
+        function goOnline() {
+        const status = document.getElementById("status");
+        status.textContent = "Online";
+        status.style.color = "green";
+        }
+    </script>
+
+</body>
+</html>

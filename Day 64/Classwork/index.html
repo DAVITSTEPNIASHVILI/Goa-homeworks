@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="b1"  onclick="center()">Click me</button>
+    <h1 id="h-1">heading</h1>
+
+    <h2 id="h-2" onclick="heading()">heading 2</h2>
+    <script>
+        function center() {
+            let x = document.getElementById("h-1");
+            x.style.textAlign = "center"
+        }
+        function heading() {
+            let x = document.getElementById("h-2");
+            x.style.textAlign = "center"
+            x.style.fontSize = "50px"
+            x.style.fontWeight = "900"
+            x.style.color = "green"
+        }
+    </script>
+</body>
+</html>
