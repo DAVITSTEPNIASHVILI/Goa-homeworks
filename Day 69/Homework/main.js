@@ -45,13 +45,13 @@ let num1 = Number(prompt("Enter number: "))
 let num2 = Number(prompt("Enter number: "))
 let num3 = Number(prompt("Enter number: "))
 // Use conditional statements to find and display the largest number.
-if (num1 > num2 > num3 ) {
+if (num1 > num2 && num1 > num3 ) {
     console.log("First number is the largest")
-} else if (num2 > num1 > num3) {
+} else if (num2 > num1 && num2 > num3) {
     console.log("Second number is the largest")
-} else if (num3 > num1 > num2) {
+} else if (num3 > num1 && num3 > num2) {
     console.log("Third number is the largest")
-} else if (num1 === num2 === num3) {
+} else if (num1 === num2 && num2 === num3) {
     console.log("Numbers are equal")
 }
 // If numbers are equal, mention it.
