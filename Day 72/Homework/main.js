@@ -19,9 +19,9 @@ inp.addEventListener("click", function() {console.log(inp.value)})
 let btn1 = document.getElementById("btn1")
 let img = document.getElementById("img")
 btn1.addEventListener("click", function() {
-    if (img.style.display == "none") {
-        img.style.display == "block"
+    if (img.style.display === "none") {
+        img.style.display = "block"
     } else {
-        img.style.display == "none"
+        img.style.display = "none"
     }
 })
