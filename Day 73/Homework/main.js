@@ -31,10 +31,10 @@ let counter2 = setInterval(function(){
 },3000)
 // Display the current time in the console every second, and stop after 15 seconds.
 let counter3 = setInterval(function(){
-    console.log(count2)
-    count2++
+    let d = new Date()
+    console.log(d)
 
-    if (count2===15000) {
+    if (count2===15) {
         clearInterval(counter3)
     }
 },1000)
@@ -43,7 +43,7 @@ let counter4 = setInterval(function(){
     console.log(count2)
     count2++
 
-    if (count2===10000) {
+    if (count2===10) {
         clearInterval(counter4)
     }
 },1000)
@@ -61,4 +61,4 @@ console.log(strs[1])
 console.log(strs[2])
 // Create an array of 5 numbers and find the sum of the first and last elements using indexing.
 const numbers = [1,2,3,4,5]
-console.log(numbers[0] + numbers[-1])
+console.log(numbers[0] + numbers[4])
