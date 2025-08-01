@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit";
+}
+body {
+    background-color: hsl(212, 45%, 89%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#conteiner {
+    background-color: white;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#conteiner img {
+    position: relative;
+    top: 10px;
+    width: 80%;
+    height: 230px;
+    border-radius: 10px;
+}
+#conteiner h3 {
+    font-weight: 900;
+}
+#conteiner p {
+    color: gray;
+}
