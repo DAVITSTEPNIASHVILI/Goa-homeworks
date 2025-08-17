@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    font-family: "Josefin Sans";
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+}
+
+#section-1 {
+    height: 100vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 100px 0 150px 200px;
+}
+#for-img {
+    display: none;
+}
+#bg-img {
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: 70vw;
+}
+
+#img-1 {
+    width: 150px;
+}
+h1 {
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing: 15px; /* ტექსტის სიმბოლოებს შორის დაშორება */
+    line-height: 100px; /* ტექსტის ხაზებს შორის დაშორება */
+    max-width: 40%;
+    text-transform: uppercase;
+}
+span {
+    font-weight: 200;
+    color: hsl(0, 36%, 70%);
+}
+
+p {
+    padding: 20px 0 40px 0;
+    max-width: 55%;
+    font-size: 18px;
+    line-height: 30px;
+    color: hsl(0, 36%, 70%);
+}
+
+input {
+    width: 90%;
+    height: 60px;
+    color: hsl(0, 36%, 70%);
+    padding: 20px 0 20px 20px;
+    border-radius: 50px;
+    border-width: 2px;
+    border-color: hsl(0, 36%, 70%);
+}
+
+input::placeholder {
+    color: hsl(0, 36%, 70%);
+}
+
+label {
+    color: hsl(0, 93%, 68%);
+    font-size: 12px;
+    padding-left: 20px;
+    display: none;
+}
+
+form {
+    width: 55%;
+    position: relative;
+}
+
+button {
+    height: 60px;
+    width: 100px;
+    border-radius: 50px;
+    background: hsl(359, 75%, 78%);
+    border: none;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    -webkit-box-shadow:0px 0px 300px 19px rgba(247,184,184,0.21);
+    -moz-box-shadow: 0px 0px 300px 19px rgba(247,184,184,0.21);
+    box-shadow: 0px 0px 300px 19px rgba(247,184,184,0.21);
+}
+
+button:hover {
+    background: hsl(358, 61%, 81%);
+    transition: 0.25s;
+}
+
+#section-2 {
+    height: 100vh;
+    overflow: hidden;
+}
+
+#img-2 {
+    height: 100%;
+}
+
+@media (max-width: 376px) {
+    #main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    #bg-img {
+        display: none;
+    }
+    #section-1 {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #img-1 {
+        width: 100px;
+    }
+    #for-img {
+        display: block;
+        height: 240px;
+        width: 100%;
+    }
+    #for-img img {
+        height: 100%;
+        width: 100%;
+    }
+    #responsive {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #info {
+        width: 70%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 35px;
+        font-weight: 400;
+        letter-spacing: 15px; /* ტექსტის სიმბოლოებს შორის დაშორება */
+        line-height: 40px; /* ტექსტის ხაზებს შორის დაშორება */
+        max-width: 80%;
+        text-transform: uppercase;
+    }
+    span {
+        font-weight: 200;
+        color: hsl(0, 36%, 70%);
+    }
+    p {
+        padding: 20px 0 40px 0;
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 20px;
+        color: hsl(0, 36%, 70%);
+    }
+    form {
+        width: 100%;
+        display: flex;
+    }
+    input {
+        width: 100%;
+    }
+    button {
+        position: relative;
+        left: -50px;
+    }
+    #section-2 {
+        display: none;
+    }
+}
