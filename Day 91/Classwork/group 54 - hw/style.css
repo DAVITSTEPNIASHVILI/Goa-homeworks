@@ -131,6 +131,7 @@ button:hover {
     }
     #img-1 {
         width: 100px;
+        margin-left: 50px;
     }
     #for-img {
         display: block;
