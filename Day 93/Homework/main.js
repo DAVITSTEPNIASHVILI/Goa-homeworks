@@ -38,7 +38,7 @@ console.log("My number is 12345".replaceAll("12345","#"))
 // Replace all vowels in "Javascript is fun" with "*".
 let str = "Javascript is fun";
 let result = ""
-for (let char of str) {
+for (let char in str) {
     if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u"){
         result += "*"
     } else {
