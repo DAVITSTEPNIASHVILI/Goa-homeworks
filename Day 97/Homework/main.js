@@ -52,8 +52,15 @@
 // const numbers = [1,2,3,4,5,6,7,8,9,10]
 // console.log(numbers.map(el => el**2))
 // Given an array of words, use map to return each word reversed.
-// const words = ["hello","David","house","bridge","bed"]
-
+const words = ["hello","David","house","bridge","bed"]
+console.log(words.map(username => {
+    const nameLength = username.length
+    let reversedName = ""
+    for (let i=nameLength - 1;i > -1;i--) {
+        reversedName += username[i]
+    }
+    return reversedName
+}))
 // // Use map to turn an array of temperatures in Celsius into Fahrenheit.
 // const celsius = [0, 20, 30, 40];
 // console.log(celsius.map(c => (c * 9/5) + 32))
