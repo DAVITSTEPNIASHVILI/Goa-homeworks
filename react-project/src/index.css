@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+.linear-gr {
+  background: linear-gradient(90deg,rgba(212, 88, 124, 1), rgba(224, 106, 86, 1));
+}
+
+.shadow {
+  box-shadow: 6px 8px 21px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 6px 8px 21px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 8px 21px 0px rgba(0,0,0,0.75);
+}
