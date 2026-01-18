@@ -1,0 +1,7 @@
+1) თქვენი სიტყვებით ახსენით რა არის error boundary და რატომ არის კარგი მისი გამოყენება
+error boundary არის საშუალება რითაც შეგვიძლია ჩვენი კოდი თუ მასში error-ია არ გავავრცელოთ, სწორედ ამიტომაც არის მისი გამოყენება კარგი.
+
+2) ახსენით error boundary კლასის შემდეგ მეთოდებს რაში ვიყენებთ: reset, componentDidCatch, getDerivedStateFromError
+getDerivedStateFromError – იჭერს error-ს და ცვლის state-ს, რომ დავარენდეროთ fallback UI
+componentDidCatch – გამოიყენება error-ის ლოგირებისთვის და სხვა side effect-ებისთვის
+reset – custom მეთოდია, რომელიც ასუფთავებს error state-ს და აბრუნებს კომპონენტს ნორმალურ მდგომარეობაში
