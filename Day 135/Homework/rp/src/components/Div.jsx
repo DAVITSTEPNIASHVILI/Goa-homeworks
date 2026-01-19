@@ -15,7 +15,7 @@ const Div = () => {
                 <div className="w-full h-[50%] flex justify-center items-center">
                     <p>{count}</p>
                 </div>
-                <div className="w-full h-[50%] flex justify-center items-center gap-[10px]">
+                <div className="w-full h-[50%] flex justify-center items-center gap-2.5">
                     <button onClick={increase}>Increase</button>
                     <button onClick={reset}>Reset</button>
                     <button onClick={decrease}>Decrease</button>
