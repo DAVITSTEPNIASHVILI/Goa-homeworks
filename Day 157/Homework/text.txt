@@ -1,0 +1,9 @@
+3) თქვენი სიტყვებით ახსენით შემდეგი ბრძანებები: show dbs, show collections, db, use <db>, cls, it, db.<collection>.find()
+
+show dbs - achvenebs monacemta bazebi rac gvaqvs
+show collections - achvenebs konkretul monacemta bazashi romeli koleqciebi gvaqvs
+db - achvenebs axla romel monacemta bazashi vart
+use <db> - amit shevdivart konkretul monacemta bazashi
+cls - vasuftavebt mongosh-s
+it - rodesac documentebs gamovitant mongosh-shi bevri ar gamoaqvs da ufro meti rom gamoitanos mag dros gamoiuyeneba
+db.<collection>.find() - amit chven monacemta bazashi racaa koleqcia maqedan amogvaqvs dokumentebi
