@@ -1,0 +1,19 @@
+2)
+
+Find the movie where the genres array is exactly: Sci-Fi and Action.
+db.film_collection.find({genres: ["Sci-Fi", "Action"]})
+
+Find the movie where the cast array exactly contains Keanu Reeves and Laurence Fishburne in the same order.
+db.film_collection.find({cast: ["Keanu Reeves", "Laurence Fishburne"]})
+
+Find all movies that contain "Sci-Fi" in the genres array.
+db.film_collection.find({genres: {$all: ["Sci-Fi"]}})
+
+Find movies that include Anne Hathaway in the cast list.
+db.film_collection.find({cast: {$all: ["Anne Hathaway"]}})
+
+Find movies that include both Sci-Fi and Adventure in their genres.
+db.film_collection.find({genres: {$all: ["Sci-Fi", "Adventure"]}})
+
+Find movies that contain Action and Drama in their genres.
+db.film_collection.find({genres: {$all: ["Action", "Drama"]}})

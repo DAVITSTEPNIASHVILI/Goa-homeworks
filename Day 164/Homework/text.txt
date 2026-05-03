@@ -1,0 +1,56 @@
+2) თქვენი სიტყვებით ახსენით რატომ ჯობია replaceOne მეთოდის გამოყენება ჯერ deleteOne-ის, ხოლო შემდეგ insertOne-ის გამოყენებას.
+
+privel rigshi cota kodis dawera mogviwevs da meore rodesac wavshlit da shemdeg davamatebt documents igi daemateba boloshi xolo replaceOne-it pirdapir im adgilas chajdeba dokumenti sadac is washlili dokumenti iyo
+
+3)
+
+Delete one document where id = 1
+db.student_collection.deleteOne({id: 1})
+
+Delete the first document where price > 400
+db.student_collection.deleteOne({price: {$lt: 400}})
+
+Delete one document where in_stock = false
+db.student_collection.deleteOne({in_stock: false})
+
+Delete a document where rating is null
+db.student_collection.deleteOne({rating: null})
+
+Delete one document where tags array contains a specific value (pick any tag)
+db.student_collection.deleteOne({tags: null})
+
+4)
+
+Delete all documents where price < 50
+db.student_collection.deleteMany({price: {$lt: 50}})
+
+Delete all documents where in_stock = false
+db.student_collection.deleteMany({in_stock: false})
+
+Delete documents where rating does not exists
+db.student_collection.deleteMany({rating: {$exists: false}})
+
+Delete all documents where price > 300 and in_stock = false
+db.student_collection.deleteMany({price: {$lt: 300}, in_stock: false})
+
+Delete documents where tags array is empty (challenge)
+?
+
+
+5)
+
+Replace the document with id 2 with a new object that contains only id, name, and price.
+db.student_collection.replaceOne({id: 2}, {id: 2, name: "vigac", price: 4})
+
+Replace the first document where the price is greater than 300 with a simplified object that has fewer fields.
+db.student_collection.replaceOne({price: {$lt: 300}}, {name: "vigac2", price: 4})
+
+
+Replace the document with id 10 using a completely new structure that includes a nested object.
+db.student_collection.replaceOne({id: 10}, {name: "vigac3", grades: {grade: 10, smth: "smth"}})
+
+Replace one document but manually keep some of the original values (you’ll need to inspect it first).
+db.student_collection.replaceOne({id: 10}, {id: 10,name: "vigac3", grades: {grade: 10, smth: "smth"}})
+
+Attempt to replace a document that does not exist (for example, id 999) and observe the result.
+db.student_collection.replaceOne({id: 999}, {id: 10,name: "vigac3", grades: {grade: 10, smth: "smth"}})

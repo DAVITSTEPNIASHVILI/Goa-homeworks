@@ -1,0 +1,4 @@
+db.film_collection.find({duration: {$elemMatch: {$gte: 100, $lte: 200}}})
+
+db.film_collection.findOne({title: "Interstellar"}, {title: 1, duration: 1, _id: 0})
+db.film_collection.findOne({title: "The Dark Knight"}, {title: 1, duration: 1, _id: 0})

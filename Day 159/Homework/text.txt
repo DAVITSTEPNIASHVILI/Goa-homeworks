@@ -1,0 +1,66 @@
+use main_db
+
+1)
+
+Return only name and price for all documents
+db.student_collection.find({}, {name:1, price:1})
+
+Return all fields except dimensions
+db.student_collection.find({}, {dimensions: 0})
+
+Return name, rating, and exclude _id
+db.student_collection.find({}, {name:1, rating:1, _id:0})
+
+Return only dimensions.width and dimensions.height
+db.student_collection.find({}, {"dimensions.width": 1, "dimensions.height": 1})
+
+Return documents where in_stock = true, but show only name and in_stock
+db.student_collection.find({in_stock: true}, {name: 1, in_stock: 1})
+
+2)
+
+Get the first 5 documents
+db.student_collection.find().limit(5)
+
+Get 10 documents where price > 100
+db.student_collection.find({price: {$gt: 100}}).limit(10)
+
+Get 3 documents where rating is not null
+db.student_collection.find({rating: {$gt: null}}).limit(3)
+
+Combine with projection: return only name for first 7 docs
+db.student_collection.find({}, {name: 1}).limit(7)
+
+Get 5 cheapest items (hint: combine with .sort())
+db.student_collection.find().sort({price: -1}).limit(5)
+
+3)
+
+Count all documents
+db.student_collection.countDocuments()
+
+Count documents where in_stock = true
+db.student_collection.countDocuments({in_stock: true})
+
+Count documents where price > 200
+db.student_collection.countDocuments({price: {$gt: 200}})
+
+Count documents where rating exists and is not null
+db.student_collection.countDocuments({rating: {$exists: true}})
+
+4)
+
+Find documents where rating exists
+db.student_collection.find({rating: {$exists: true}})
+
+Find documents where rating does not exist
+db.student_collection.find({rating: {$exists: false}})
+
+Find documents where dimensions.depth exists
+db.student_collection.find({"dimensions.depth": {$exists: true}})
+
+Find documents where tags exists
+db.student_collection.find({tags: {$exists: true}})
+
+Find documents where a non-existing field like discount is missing
+db.student_collection.find({discount: {$exists: false}})

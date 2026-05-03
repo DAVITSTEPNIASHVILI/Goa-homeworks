@@ -1,0 +1,65 @@
+1)
+
+Insert multiple documents into products containing:
+
+name
+price
+category
+
+Create at least 4 products.
+
+db.products_collection.insertMany([{name: "Computer", price: "free", category: "computer"}, {name: "Computer2", price: "free2", category: "computer2"}])
+
+2)
+
+Insert three students into students collection.
+Each student must have:
+
+name
+age
+courses array
+
+db.student_collection.insertMany([{
+    name: "Alice Johnson",
+    age: 16,
+    courses: ["Math", "Biology", "English"]
+  },
+  {
+    name: "David Kim",
+    age: 17,
+    courses: ["Physics", "Chemistry", "Computer Science"] // this objects are AI(i know insertMany function)
+  },
+  {
+    name: "Sara Ahmed",
+    age: 15,
+    courses: ["History", "Art", "Geography"]
+  }
+])
+
+
+3)
+
+In the users collection, find the user with name Ana and change the age to 25.
+
+db.student_collection.updateOne({name: "Ana"}, {$set: {age: 25}})
+
+
+4)
+
+In the users collection, find the user with name Giorgi and update the city to Batumi.
+
+db.student_collection.updateOne({name: "Giorgi"}, {$set: {city: "DJBatumski"}})
+
+5)
+
+In the customers collection, a document has an address embedded document with fields city, street, and number.
+Find the customer named David and change address.city to Kutaisi.
+
+db.people_collection.updateOne({name:"David"}, {$set: {"address.city": "Kutaisi"}})
+
+
+6)
+
+In the customers collection, find the customer named Ana and change address.street to Chavchavadze.
+
+db.people_collection.updateOne({name:"Ana"}, {$set: {"address.street": "Chavchavadze"}})

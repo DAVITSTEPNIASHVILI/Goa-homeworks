@@ -1,0 +1,33 @@
+2)
+
+Set in_stock = false for all documents where price > 400
+db.student_collection.updateMany({price: {$lt: 400}}, {$set: {in_stock: false}})
+
+Add discount: 10 to all documents where price < 100
+db.student_collection.updateMany({price: {$lt: 100}}, {$set: {discount: 10}})
+
+Increase price by 5% for all documents
+db.collection.updateMany({}, [{$set:{price:{$multiply:["$price",1.05]}}}])
+
+Add a field category: "general" to all documents missing it
+db.collection.updateMany({}, {$set: {category: "general"}})
+
+Remove ($unset) the rating field from all documents where it is null
+db.collection.updateMany({rating: null}, {$set: {$unset: {rating: 1}}})
+
+3)
+
+Find one document where in_stock = true and set it to false, return updated doc
+db.student_collection.findAndModify({query: {in_stock: true}, update: {in_stock: false}, new: true})
+
+Increase price by 50 for the document with the highest price (hint: sort)
+db.student_collection.updateOne({},{ $inc: { price: 50 } },{ sort: { price: -1 } })
+
+Find a document where rating < 2 and set status = "low_quality"
+db.student_collection.updateOne({rating: {$lt: 2}}, {$set: {status: "low_quality"}})
+
+Remove one tag from a document using $pop
+?
+
+Set reviewed = true and return the original document instead of updated
+db.student_collection.findAndModify({query: {}, update: {reviewed: true}})

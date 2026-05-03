@@ -1,0 +1,8 @@
+db.products_collection.deleteOne({name: "Book"})
+db.products_collection.deleteOne({name: "computer"})
+db.products_collection.deleteMany({name: "Computer2"})
+db.products_collection.deleteMany({in_stock: false})
+
+db.people_collection.replaceOne({city: "DJBatumski"}, {name: "DJ Batumski"})
+db.people_collection.replaceOne({age: 20}, {name: "DJ Batumski", city: "Batumi"})
+db.people_collection.replaceOne({version: 2.5}, {name: "DJ Batumski", city: "Batumi", bio: "Batumi, Batumi Game Cocxalia"})

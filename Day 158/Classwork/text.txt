@@ -1,0 +1,4 @@
+db.student_collection.find({id: {$lte: 20}})
+db.student_collection.find({price: {$gt: 100}})
+db.student_collection.find({"dimensions.depth": {$lt: 100}})
+db.student_collection.find({"dimensions.height": {$gte: 50}})

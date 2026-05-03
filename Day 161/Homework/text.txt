@@ -1,0 +1,16 @@
+1)
+
+Find movies where the genres array contains elements matching multiple conditions such as containing both Sci-Fi and Adventure together.
+db.film_collection.find({genres: {$all: ["Sci-Fi", "Adventure"]}})
+
+Find movies where an actor in the cast has the name Matthew McConaughey.
+db.film_collection.find({cast: "Matthew McConaughey"})
+
+Find the top 5 highest rated movies.
+db.film_collection.find().sort({userRating: -1}).limit(5)
+
+Find movies released before 2010 with rating above 8.
+db.film_collection.find({userRating: {$gt: 8}, releaseDate: {$lt: 2010}})
+
+Find movies directed by Christopher Nolan sorted by IMDb rating descending.
+db.film_collection.find().sort({userRating: -1}).limit(5)
