@@ -1,0 +1,42 @@
+2)
+
+Query all cars where year > 2015
+Use .explain("executionStats")
+Identify:
+executionTimeMillis
+
+executionTimeMillis: 0,
+
+3)
+
+Find all cars with a specific brand (e.g., Toyota)
+Run .explain("executionStats")
+Check how many documents were scanned vs returned
+
+totalDocsExamined: 0, nReturned: 0,
+
+4)
+
+Create a single-field index on year
+Rerun Task 2
+Compare:
+executionTimeMillis
+totalDocsExamined
+
+db.employee_collection.createIndex({year: 1})
+db.employee_collection.find({year: {$gt: 2015}}).explain("executionStats")
+totalDocsExamined: 0,
+executionTimeMillis: 0,
+
+5)
+
+Create a compound index on brand and year
+Query:
+cars with a specific brand AND year > value
+Use explain and verify:
+index is used
+fewer documents examined
+
+db.employee_collection.createIndex({year: 1, brand: -1})
+db.employee_collection.find({year: {$gt: 2015}, brand: "Toyota"}).explain("executionStats")
+executionTimeMillis: 1,

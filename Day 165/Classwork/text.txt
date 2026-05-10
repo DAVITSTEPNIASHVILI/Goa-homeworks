@@ -1,0 +1,9 @@
+db.people_collection.createIndex({age: 1})
+db.people_collection.createIndex({bio: -1})
+db.people_collection.createIndex({version: 1})
+
+db.employee_collection.find({age: 50}).explain("executionStats")
+executionTimeMillis: 19,
+db.employee_collection.createIndex({age: -1})
+db.employee_collection.find({age: 50}).explain("executionStats")
+executionTimeMillis: 1,
