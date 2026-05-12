@@ -1,0 +1,27 @@
+import AppError from "../utils/AppError.js";
+import Readfile from "../utils/ReadFile.js";
+import Writefile from "../utils/WriteFile.js";
+import catchAsync from "../utils/catchAsync.js"
+
+export const getAllBooks = catchAsync(async (req, res, next) => {
+    const allBooks = await Readfile(process.env.DB);
+    
+    if (allBooks.length === 0) {
+        return next(new AppError("No books are available!", 400))
+    };
+
+    res.status(200).json(allBooks)
+});
+
+export const getSingleBook = catchAsync(async (req,res,next) => {
+    const allBooks = await Readfile(process.env.DB)
+    const id = req.params.id
+
+    const foundBook = allBooks.filter(obj => obj.id === id)
+
+    if (foundBook.length === 0) {
+        return next(new AppError("You entered id wrong!", 404))
+    }
+
+    res.status(200).json(foundBook)
+})

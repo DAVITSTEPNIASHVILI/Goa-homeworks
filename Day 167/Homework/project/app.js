@@ -1,0 +1,26 @@
+import express from "express";
+import dotenv from "dotenv";
+import morgan from "morgan";
+
+// Routers
+import booksRouter from "./router/books.route.js";
+import globalErrorHandling from "./controllers/error.cotrollers.js";
+
+// configuration for env variables
+dotenv.config()
+
+// create a server
+const app = express();
+
+// middlewares
+app.use(express.json());
+app.use(morgan("dev"))
+app.use("/api/books", booksRouter);
+app.use("/api/status", (req, res, next) => {
+    res.status(200).json({status: "Server is running"});
+    next()
+})
+
+app.use(globalErrorHandling)
+
+app.listen(process.env.PORT, () => console.log(`Server is running on port ${process.env.PORT}`))
