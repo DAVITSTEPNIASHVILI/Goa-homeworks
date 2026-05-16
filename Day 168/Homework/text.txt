@@ -1,0 +1,6 @@
+1) თქვენი სიტყვებით ახსენით mongoose მოდელის დანიშნულება და ახსენეთ ჩვენს პროექტში მის რომელ მეთოდებს ვიყენებთ.
+mongoose modulis danishnuleba aris is rom chven shegvidzlia davukavshirdet mongodb bazas romelic namdvili bazaa da ara fake db(db.json).
+
+3) თქვენი სიტყვებით ახსენით სქემისა და მოდელის დანიშნულება
+sqema dzalian gviadvilebs saqmes da mas imistvis viyenebt rom bevri validacia agar vwerot kontrolerebshi, xolo modeli imistvis gvchirdeba rom am modelze gamovidzaxot sxvadasxva operaciebi.
+
