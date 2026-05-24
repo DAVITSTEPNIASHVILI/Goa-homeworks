@@ -9,7 +9,7 @@ export const signUp = catchAsync(async (req, res, next) => {
 
     const code = newUser.createEmailVerificationToken()
     await newUser.save({validateBeforeSave: false})
-    const url = `${req.protocol}::/${req.get("host")}/api/auth/verify/${code}`
+    const url = `${req.protocol}://${req.get("host")}/api/auth/verify/${code}`
     const html = `
         <!DOCTYPE html>
         <html lang="en">

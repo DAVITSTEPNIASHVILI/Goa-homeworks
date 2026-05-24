@@ -1,6 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
+import morgan from "morgan";
 
 // Routers
 import booksRouter from "./router/books.route.js";
@@ -13,6 +14,7 @@ dotenv.config()
 // create a server
 const app = express();
 
+app.use(morgan("dev"))
 app.use(express.json())
 app.use("/api/books", booksRouter)
 app.use("/api/auth", usersRouter)
