@@ -4,7 +4,8 @@ import mongoose from "mongoose";
 
 // Routers
 import booksRouter from "./router/books.route.js";
-import globalErrorHandling from "./controllers/error.cotroller.js";
+import globalErrorHandler from "./controllers/error.controller.js";
+import { usersRouter } from "./router/users.route.js";
 
 // configuration for env variables
 dotenv.config()
@@ -14,8 +15,12 @@ const app = express();
 
 app.use(express.json())
 app.use("/api/books", booksRouter)
-
-app.use(globalErrorHandling)
+app.use("/api/auth", usersRouter)
+app.use("/api/status", (req, res, next) => {
+    res.status(200).json({status: "Server is running"});
+    next()
+})
+app.use(globalErrorHandler)
 
 mongoose.connect(process.env.DB_CONNECTION)
     .then(() => {

@@ -36,8 +36,8 @@ print(greet("David"))
 
 
 def check_even_odd(numbers):
-    numbers = [1, 2, 3, 4, 5, 6]
-    for numbers in numbers:
+    number = [1, 2, 3, 4, 5, 6]
+    for numbers in number:
         if numbers == range(0,7,2):
             print(f"{numbers} is even")
         elif numbers == range(1,7,2):

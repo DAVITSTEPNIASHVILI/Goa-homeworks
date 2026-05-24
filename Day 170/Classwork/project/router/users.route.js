@@ -1,0 +1,7 @@
+import express from "express";
+import { signUp, verify } from "../controllers/auth.controller.js";
+
+export const usersRouter = express.Router()
+
+usersRouter.post("/signUp", signUp)
+usersRouter.get("/verify/:code", verify)

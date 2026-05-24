@@ -4,7 +4,7 @@ let btn = document.getElementById("btn")
 btn.addEventListener("click", function() {alert("Hello")})
 // Change Text on Hover
 // Add an event listener to a paragraph so that when the mouse hovers over it, the text changes to something else.
-let p =document.getElementById("p")
+let p = document.getElementById("p")
 p.addEventListener("mouseover", function() {p.textContent = "World!"})
 // Toggle Background Color
 // Add an event listener to a div so that when it's clicked, its background color toggles between two colors.

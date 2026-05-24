@@ -39,6 +39,7 @@ let counter3 = setInterval(function(){
     }
 },1000)
 // Create a simple timer that counts up in seconds and stops when it reaches 10 seconds.
+let count2 = 0
 let counter4 = setInterval(function(){
     console.log(count2)
     count2++
