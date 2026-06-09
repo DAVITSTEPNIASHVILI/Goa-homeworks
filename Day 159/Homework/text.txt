@@ -46,7 +46,7 @@ Count documents where price > 200
 db.student_collection.countDocuments({price: {$gt: 200}})
 
 Count documents where rating exists and is not null
-db.student_collection.countDocuments({rating: {$exists: true}})
+db.student_collection.countDocuments({rating: {$exists: true, $ne: null}})
 
 4)
 

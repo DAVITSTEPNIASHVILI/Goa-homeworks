@@ -1,7 +1,2 @@
-db.film_collection.updateOne({userRating: {$gt: 9}}, {$set: {title: "Dato's Movie"}})
-db.people_collection.insertMany([{name: "Dato"}, {name:"vigac"}, {name:"vigac2"}])
+db.film_collection.updateOne({userRating: {$gt: 9}}, {title: "Dato's Movie"})
 
-db.film_collection.updateOne({userRating: 8}, {$push: {Ingredient: "rdze"}})
-db.film_collection.updateOne({userRating: {$gte: 8}}, {$push: {Ingredient2: "karaqi"}})
-db.film_collection.updateOne({userRating: {$gte: 8}}, {$set: {"cast.1": "Stepno"}})
-db.film_collection.updateOne({language: "English"}, {$set: {"genres.1": "Stepno's genre"}})
