@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Hello, World!</p>
+
+    {% comment %}
+        {% for i in arr %}
+            {% if i|divisibleby:2 %}
+                <p>Even: {{ i }}</p>
+            {% else %}
+                <p>Odd: {{ i }}</p>
+            {% endif %}
+        {% endfor %} 
+    {% endcomment %}
+
+    {% for i in arr %}
+        {% if i.age >= 18 %}
+            <p>{{ i.name }} {{ i.surname }} is Adult</p>
+        {% else %}
+            <p>{{ i.name }} {{ i.surname }} is not an adult</p>
+        {% endif %}
+    {% endfor %}
+
+</body>
+</html>
