@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for product, price in products.items %}
+        {% if price > 100 %}
+            <p>{{ product }} - {{ price }} is expensive</p>
+        {% else %}
+            <p>{{ product }} - {{ price }} is cheap</p>
+        {% endif %}
+    {% endfor %}
+    <hr>
+    {% for num in nums %}
+        {% if num|divisibleby:5 %}
+            <p>{{ num }} is divisible by 5</p>
+        {% else %}
+            <p>{{ num }} is not divisible by 5</p>
+        {% endif %}
+    {% endfor %}
+    <hr>
+    {% for word in words %}
+        {% if word|length|divisibleby:2 %}
+            <p>{{ word }}'s length is even</p>
+        {% else %}
+            <p>{{ word }}'s length is odd</p>
+        {% endif %}
+    {% endfor %}
+    <hr>
+    {% for age in ages %}
+        {% if age < 13 %}
+            <p>{{ age }} is a child</p>
+        {% else %}
+            <p>{{ age }} is a teenager or older</p>
+        {% endif %}
+    {% endfor %}
+    <hr>
+    {% for score in scores %}
+        {% if score >= 90 %}
+            <p>{{ score }} - Excellent</p>
+        {% else %}
+            <p>{{ score }} - Needs improvement</p>
+        {% endif %}
+    {% endfor %}
+</body>
+</html>
