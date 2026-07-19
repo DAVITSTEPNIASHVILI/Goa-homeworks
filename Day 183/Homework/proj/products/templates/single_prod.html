@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>{{ prod.title }} ({{ prod.price }})</h1>
+    <p>Color: {{ prod.color }}</p>
+    <p>Size: {{ prod.size }}</p>
+
+    <a href="/products/delete/{{ prod.id }}"><button>Delete</button></a>
+</body>
+</html>

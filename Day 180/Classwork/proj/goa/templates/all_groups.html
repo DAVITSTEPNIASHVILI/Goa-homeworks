@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for group in groups %} 
+        <a href="{{ group.id }}"><h1>Group: {{ group.id }}</h1></a>
+    {% endfor %}
+</body>
+</html>
