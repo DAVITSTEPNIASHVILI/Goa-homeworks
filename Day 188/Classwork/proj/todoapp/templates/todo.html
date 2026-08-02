@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>main page</h1>
+
+    <form method='POST'>
+        {% csrf_token %}
+        <input type="text" name='text'> <br><br>
+
+        <button type='submit'>Add</button>
+    </form> <br><br>
+    
+    <div>
+        <h1>added Texts</h1>
+        {% for title in texts %}
+            <b>{{ title.text }}</b> <a href="delete/{{ title.id }}"><button>Delete</button></a> <br> <br>
+        {% endfor %}
+    </div>
+</body>
+</html>

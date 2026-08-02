@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>There all users</h1>
+
+    {% for user in all_users %}
+        <a href="{{ user.id }}"><h1>{{ user.username }}</h1></a>
+    {% endfor %}
+
+    <a href="/users/register"><button>Register</button></a>
+    <a href="/users/log_in"><button>Log In</button></a>
+</body>
+</html>

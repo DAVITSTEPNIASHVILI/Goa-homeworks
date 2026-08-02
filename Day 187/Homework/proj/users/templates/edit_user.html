@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <label for="username">username:</label> <br>
+        <input type="text" id="username" name="username" value="{{ current_user.username }}"> <br> <br>
+
+        <label for="email">email:</label> <br>
+        <input type="email"id="email" name="email" value="{{ current_user.email }}"><br><br>
+
+        <label for="password">password:</label> <br>
+        <input type="password" id="password" name="password" value="{{ current_user.password }}"> <br> <br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
