@@ -1,0 +1,8 @@
+{% extends "master.html" %}
+
+{% block title %} საიტის სახელი {% endblock title %}
+
+{% block home %}
+    <h1>This is home page</h1>
+    <a href="{% url 'main' %}">Main page</a>
+{% endblock home %}
